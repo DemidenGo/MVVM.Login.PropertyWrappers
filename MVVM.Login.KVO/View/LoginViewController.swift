@@ -33,22 +33,14 @@ final class LoginViewController: UIViewController {
     
     private func bind() {
         guard let viewModel = viewModel else { return }
-        
-        isLoginAllowedBinding = viewModel.observe(\.isLoginAllowed,
-                                                   options: [.new],
-                                                   changeHandler: { [weak self] _, change in
-            
-            guard let newValue = change.newValue else { return }
+
+        viewModel.$isLoginAllowed.bind { [weak self] newValue in
             self?.setLoginButton(enabled: newValue)
-        })
-        
-        errorMessageBinding = viewModel.observe(\.errorMessage,
-                                                 options: [.new],
-                                                 changeHandler: { [weak self] _, change in
-            
-            guard let newValue = change.newValue else { return }
+        }
+
+        viewModel.$errorMessage.bind { [weak self] newValue in
             self?.setError(newValue)
-        })
+        }
     }
     
     private func setLoginButton(enabled: Bool) {

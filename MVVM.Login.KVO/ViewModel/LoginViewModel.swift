@@ -1,10 +1,12 @@
 import Foundation
 
-@objcMembers
 final class LoginViewModel: NSObject {
-    
-    dynamic private(set) var isLoginAllowed: Bool = false
-    dynamic private(set) var errorMessage: String? = nil
+
+    @Observable
+    private(set) var isLoginAllowed: Bool = false
+
+    @Observable
+    private(set) var errorMessage: String? = nil
     
     private let model: LoginModel
     

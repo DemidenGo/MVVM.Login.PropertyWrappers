@@ -19,6 +19,7 @@
 		172E519229A119C500E595AF /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172E518A29A119C500E595AF /* LoginError.swift */; };
 		172E519329A119C500E595AF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172E518B29A119C500E595AF /* LoginModel.swift */; };
 		172E519429A119C500E595AF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172E518C29A119C500E595AF /* Credentials.swift */; };
+		92DB0DB429FDC43400877A94 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0DB329FDC43400877A94 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		172E518A29A119C500E595AF /* LoginError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		172E518B29A119C500E595AF /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		172E518C29A119C500E595AF /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		92DB0DB329FDC43400877A94 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				172E516F29A1193100E595AF /* SceneDelegate.swift */,
 				1722790729A8ABB300681649 /* View */,
 				172E518229A119C500E595AF /* ViewModel */,
+				92DB0DB229FDC40800877A94 /* PropertyWrappers */,
 				172E518929A119C500E595AF /* Model */,
 				172E518729A119C500E595AF /* Helpers */,
 				172E518129A1197B00E595AF /* Supporting Files */,
@@ -123,6 +126,14 @@
 				172E518C29A119C500E595AF /* Credentials.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		92DB0DB229FDC40800877A94 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0DB329FDC43400877A94 /* Observable.swift */,
+			);
+			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DB0DB429FDC43400877A94 /* Observable.swift in Sources */,
 				172E518F29A119C500E595AF /* LoginViewController+keyboardEvents.swift in Sources */,
 				172E519129A119C500E595AF /* UIViewController+hideKeyboard.swift in Sources */,
 				172E519029A119C500E595AF /* SuccessViewController.swift in Sources */,
